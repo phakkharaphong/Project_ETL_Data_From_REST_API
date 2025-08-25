@@ -1,0 +1,121 @@
+[
+  {
+    "type_id": "16",
+    "type_name": "ที่พักอาศัย",
+    "type_icon": "27a592a62dff4c62ebdd546f349125fa.png",
+    "type_status": "1",
+    "deleted": "0"
+  },
+  {
+    "type_id": "3",
+    "type_name": "ศูนย์ประชุม หอประชุม ห้องประชุม ศูนย์แสดงสินค้า",
+    "type_icon": "65c0dd6ce412e3aeb631cdc8d877a452.png",
+    "type_status": "1",
+    "deleted": "0"
+  },
+  {
+    "type_id": "15",
+    "type_name": "สถานบริการสาธารณสุข",
+    "type_icon": "37d1df15b265265a3abdd3b15809e407.png",
+    "type_status": "1",
+    "deleted": "0"
+  },
+  {
+    "type_id": "11",
+    "type_name": "หอสมุด หอศิลป์ พิพิธภัณฑสถาน",
+    "type_icon": "c609ebf44911df3e5d3a08e58346be7d.png",
+    "type_status": "1",
+    "deleted": "0"
+  },
+  {
+    "type_id": "10",
+    "type_name": "อาคารขนส่งสาธารณะ",
+    "type_icon": "4f2c099db27d1cdb670420e1ec3798a1.png",
+    "type_status": "1",
+    "deleted": "0"
+  },
+  {
+    "type_id": "17",
+    "type_name": "อาคารที่พักพิง clean air sheter",
+    "type_icon": "6c7fa74b29e2be87255de92f83dbfe96.png",
+    "type_status": "1",
+    "deleted": "0"
+  },
+  {
+    "type_id": "12",
+    "type_name": "อาคารศาสนสถาน",
+    "type_icon": "b839135f883d37287084c2fdca31d45a.png",
+    "type_status": "1",
+    "deleted": "0"
+  },
+  {
+    "type_id": "13",
+    "type_name": "อาคารสถานดูแลผู้สูงอายุ",
+    "type_icon": "2969be1a17ebb9d53108c0df4814e122.png",
+    "type_status": "1",
+    "deleted": "0"
+  },
+  {
+    "type_id": "5",
+    "type_name": "อาคารสถานที่จำหน่ายอาหารและเครื่องดื่ม",
+    "type_icon": "98ba345b5e2560b279443514aaf207ef.png",
+    "type_status": "1",
+    "deleted": "0"
+  },
+  {
+    "type_id": "6",
+    "type_name": "อาคารสถานที่ออกกำลังกาย สถานกีฬาในร่ม",
+    "type_icon": "9923a12d80ecc985d6288b2a14122861.png",
+    "type_status": "1",
+    "deleted": "0"
+  },
+  {
+    "type_id": "4",
+    "type_name": "อาคารสถานบริการ ตามกฎหมายว่าด้วยสถานบริการ",
+    "type_icon": "2021fdfb308daeff2565d6fd2a1679ee.png",
+    "type_status": "1",
+    "deleted": "0"
+  },
+  {
+    "type_id": "14",
+    "type_name": "อาคารสถานพัฒนาเด็กปฐมวัย",
+    "type_icon": "c3fd0afd9cbdf2b32a8e571c2d6c85a2.png",
+    "type_status": "1",
+    "deleted": "0"
+  },
+  {
+    "type_id": "7",
+    "type_name": "อาคารสถานศึกษา",
+    "type_icon": "4080f6abe13753dcc985ad23ff474df4.png",
+    "type_status": "1",
+    "deleted": "0"
+  },
+  {
+    "type_id": "1",
+    "type_name": "อาคารสำนักงาน",
+    "type_icon": "25e2b7066c67b9c81ab52af7c7720acd.png",
+    "type_status": "1",
+    "deleted": "0"
+  },
+  {
+    "type_id": "2",
+    "type_name": "อาคารห้างสรรพสินค้า ศูนย์การค้า ซูเปอร์มาร์เก็ต",
+    "type_icon": "c041bc7bcd7a85a2e5d23b735929f56c.png",
+    "type_status": "1",
+    "deleted": "0"
+  },
+  {
+    "type_id": "9",
+    "type_name": "อาคารโรงมหรสพ",
+    "type_icon": "65a59d645b3e4ecb6309ab6f21a5e121.png",
+    "type_status": "1",
+    "deleted": "0"
+  },
+  {
+    "type_id": "8",
+    "type_name": "อาคารโรงแรม",
+    "type_icon": "016d5c2adbf55557bdff93639042c9cc.png",
+    "type_status": "1",
+    "deleted": "0"
+  }
+]

@@ -1,0 +1,95 @@
+##################################################################
+# Program Name:  GET API And writer CSV
+# Program Purpose:
+#
+# Fetches data from the specified API
+# Validates the response
+# Converts the JSON to a UTF-8 encoded CSV
+# Saves it to the specified directory
+# Displays the total number of records
+# Date created : Aug 21, 2025 6.00pm
+#################################################################
+
+import requests
+import csv
+import os
+import pandas as pd
+
+
+
+# usecols =["จังหวัด","อำเภอ", "code", "ตำบล"]
+def Read_excel(path_file_excel, sheet_namee,url_API):
+   i = 0
+   df = pd.read_excel(path_file_excel, sheet_name=sheet_namee, usecols=["no","name"])
+   row_index = pd.DataFrame(df)
+   for idx, row in row_index.iterrows():
+       if pd.notnull(row["name"]):
+        i += 1
+        name = row["name"]
+        print(f"=========Check Code{i}=============")
+        print(f"แถว {idx} {name}")
+        Get_APIEndPoint_Province(url_API,name)
+
+def Get_APIEndPoint_Province(url_point,province_name):
+    # API endpoint
+    #url = f"https://foodhandler.anamai.moph.go.th/webapp/webservice/qa?province=ขอนแก่น"
+    url = f"{url_point}{province_name}"
+    print(f"{url}")
+# Output directory and file name
+    output_dir = "C:\\Users\\chuwo\\OneDrive\\เอกสาร\\Desktop\\all_project\\ETL\\ผู้ประกอบการ"
+    output_file = f"output_{province_name}.csv"
+    output_path = os.path.join(output_dir, output_file)
+
+    #Make the API request
+    response = requests.get(url)
+
+    # Validate the response
+    if response.status_code != 200:
+        print(f"Failed to fetch data. Status code: {response.status_code}")
+    else:
+        data = response.json()
+        print(type(data))
+    
+        # Check if data is a list of dictionaries
+        if isinstance(data, list) and all(isinstance(item, dict) for item in data):
+            # Ensure output directory exists
+            os.makedirs(output_dir, exist_ok=True)
+
+            # Get headers from the first item
+            headers = data[0].keys()
+
+            # Write to CSV
+            with open(output_path, "w", newline="", encoding="utf-8") as f:
+                writer = csv.DictWriter(f, fieldnames=headers)
+                writer.writeheader()
+                writer.writerows(data)
+
+            print(f"Data successfully saved to {output_path}")
+            print(f"Total records: {len(data)}")
+        else:
+           print("Unexpected data format. Expected a list of dictionaries.")
+           if isinstance(data, dict) and "data" in data:
+            records = data["data"]  # ดึง list ออกมา
+            #records ตอนนี้เป็น list of dict
+            headers = records[1].keys()
+            print(f"Data Is: {headers}")
+
+            # Write to CSV
+            with open(output_path, "w", newline="", encoding="utf-8") as f:
+                writer = csv.DictWriter(f, fieldnames=headers)
+                writer.writeheader()
+                #records เป็นการชี้ว่าให้เริ่มการเขียนลงไฟล์ CSV เริ่มต้นจากลำดับที่ 1
+                writer.writerows(records[1:])
+
+            print(f"Data successfully saved to {output_path}")
+            print(f"Total records: {len(records)}")
+
+
+
+path_file_excel = input("Enter your path file excel for read: ")
+sheet_name = input("Enter your sheet_name in excel : ")
+url_API = input("Enter your path API End point: ")
+#sheet_name = input("Enter your sheet_name in excel : ")
+Read_excel(path_file_excel,sheet_name,url_API)
+
+#Get_APIEndPoint_Province(url_API,"ขอนแก่น")

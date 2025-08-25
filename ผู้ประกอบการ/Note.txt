@@ -1,0 +1,2 @@
+ข้อมูลผู้ประกอบการอาหารจาก API เส้น:
+https://foodhandler.anamai.moph.go.th/webapp/webservice/qa
