@@ -3,7 +3,8 @@ import csv
 import os
 import pandas as pd
 import json as json
-import datetime as timestamp
+import datetime as timestamp,datetime
+from datetime import datetime
 
 def Get_Data_WeatherToday(url_point):
     url = f"{url_point}"
@@ -41,6 +42,10 @@ def Get_Data_WeatherToday(url_point):
             #list สำหรับกำหนด Header และข้อมูล
             list_header_air = []
             for items in records:
+               # แปลง string DateTime เป็น object datetime
+               dt_obj = datetime.strptime(items["Observation"]["DateTime"], "%Y-%m-%d %H:%M")  
+              # แปลง datetime เป็น format ใหม่ เช่น "dd/mm/yyyy HH:MM"
+               formatted_dt = dt_obj.strftime("%m/%d/%Y %H:%M:%S")
                record = {
                   "WmoStationNumber": items["WmoStationNumber"],
                   "StationNameThai": items["StationNameThai"],
@@ -48,7 +53,7 @@ def Get_Data_WeatherToday(url_point):
                   "Province": items["Province"],
                   "Latitude": float(items["Latitude"]),
                   "Longitude": float(items["Longitude"]),
-                  "DateTime": items["Observation"]["DateTime"],
+                  "DateTime": formatted_dt,
                   "MeanSeaLevelPressure": items["Observation"]["MeanSeaLevelPressure"],
                   "Temperature": items["Observation"]["Temperature"],
                   "MaxTemperature": items["Observation"]["MaxTemperature"],
