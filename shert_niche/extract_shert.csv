@@ -1,0 +1,9 @@
+eform_id,section_id,section_title,header_dohAreaName,header_dohProvinceName,header_situation_date,header_situation_time,master_type_danger_id,position_dohProvince_name,position_dohDistrict_name,position_dohSubDistrict_name,events_description,life_impact,amount_injured,amount_dead,amount_evacuate
+8oFwRTnQ5gu7H8o,k427vUyU0TpJDB3,ข้อมูลทั่วไปเหตุการณ์,เขตสุขภาพที่ 11,พิษณุโลก,2025-09-13,09:25:00,YB1FtqasNc7Xfvr,กรุงเทพมหานคร,เขตปทุมวัน,แขวงวังใหม่,รายละเอียดเหตุการณ์,True,0,1,1
+g50zJRgMEX39zr1,k427vUyU0TpJDB3,ข้อมูลทั่วไปเหตุการณ์,เขตสุขภาพที่ 4,ปทุมธานี,2025-09-09,04:20:00,yBo4rBNFHSoUezG,สมุทรปราการ,อำเภอบางบ่อ,คลองสวน,,False,0,0,0
+RZjMYDA7Ac0iN4z,k427vUyU0TpJDB3,ข้อมูลทั่วไปเหตุการณ์,เขตสุขภาพที่ 1,เชียงใหม่,2025-09-09,04:20:00,Mh05legFZ2JFaQB,เชียงใหม่,อำเภอเมืองเชียงใหม่,ศรีภูมิ,2 มิ.ย. 68 เวลา 14.07 น. เกิดเหตุแผ่นดินไหวขนาด 4.5 ประชาชน รับรู้สึกสั่นไหวบริเวณจังหวัดเชียงใหม่ พะเยา ลำปางและแม่ฮ่องสอน,True,5,10,2
+XKi4H20L1PdQQOG,k427vUyU0TpJDB3,ข้อมูลทั่วไปเหตุการณ์,เขตสุขภาพที่ 1,เชียงใหม่,2025-08-31,06:05:00,oh4p45DTUeIdo1w,เชียงใหม่,อำเภอเชียงดาว,เมืองนะ,รายละเอียดเหตุการณ์,True,12,0,12
+5WOiKKnIR9IeTii,k427vUyU0TpJDB3,ข้อมูลทั่วไปเหตุการณ์,เขตสุขภาพที่ 1,เชียงใหม่,2025-08-31,08:00:00,oh4p45DTUeIdo1w,เชียงใหม่,อำเภอเชียงดาว,เมืองนะ,,True,12,0,12
+4VCOrNGavAXp5IB,k427vUyU0TpJDB3,ข้อมูลทั่วไปเหตุการณ์,เขตสุขภาพที่ 9,หนองบัวลำภู,2025-08-12,03:00:00,r5JVRVZyo1RW1yf,ปราจีนบุรี,อำเภอเมืองปราจีนบุรี,ไม้เค็ด,,True,5,5,5
+Wj5b0jQb9UsVj4l,k427vUyU0TpJDB3,ข้อมูลทั่วไปเหตุการณ์,เขตสุขภาพที่ 4,ลพบุรี,2025-08-19,23:10:00,jmW0hKq6cPNdOf7,อ่างทอง,อำเภอโพธิ์ทอง,อินทประมูล,ทดสอบกรอกข้อมูล,True,51234,223,123
+bu8zo1STWNt6zAg,k427vUyU0TpJDB3,ข้อมูลทั่วไปเหตุการณ์,เขตสุขภาพที่ 4,ลพบุรี,2025-08-18,03:15:00,AMq0BzRwHh8tZZi,ลพบุรี,อำเภอชัยบาดาล,ม่วงค่อม,ทดสอบระบบ12345,False,0,0,0
